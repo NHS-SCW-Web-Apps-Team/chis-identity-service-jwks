@@ -1,0 +1,9 @@
+{
+  "keys": {
+    "kty": "RSA",
+    "e": "AQAB",
+    "n": "MIICCgKCAgEA5AgYrIFSyHXICaesvcFYEXIIBDPvC7evRwXgSuw1p5moQE38Ogkk0mxqEXRcwdzSCZeEglvNb715HYkWalAgUljeYqTTjT7Eb40QhzJj9cGYk6x6fH93UTlfLNCjwNTTp6miVEQN4uIACxm/dw4l+BjQqOYBUBgS6n5RCJ0iVZPy5oPL9U2o/1nDEZUN++xA+/Ndvp3Ko1zsWfwqq8WDAe+55uxr/uS5tlPlW1awwet8F4MBrJVeRxY2diUpHZ/NhCpfmMZyu77/sP1UX0jI031kbQ2MyLlxn3L+0oZFPYkigtI3bkEeZnHTYTK9CrABJQJueHzsWLJ0QioIElf1VRV+O1bCEi2R3hSda2xvSsgbLAdqAQTLEl9XuxzRewijl1ot7qidIUcsnT1Olbuc7m08L/IW0Zitrjq5gNCccWaXAePMTfA0dwaWruE0RZTINp766uq3Dt4QbAUxzHMSM65hF8XfubiQ97mqdeN/Kd+sv/ZYHz7QZ7C+BYENhIlYXnImu79RMC3ANBfjBtc5wJ6MUmpDuJk9sN8n73Tq4mdxQhkdekmmYHtA+7TISaI7k0B31EdsMTmlZBcJQcWiO3rzl1+lmtFZVp1VcepjNEgXxjIyYbycG8cohCxx7WEbUZX7SaTAnS87tE0ENPY5V4n/rSWX1Rpps+C86aTRdWcCAwEAAQ==\r\n",
+    "kid": "integration-1",
+    "use": "sig"
+  }
+}
