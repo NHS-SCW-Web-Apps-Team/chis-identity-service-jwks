@@ -25,4 +25,4 @@ Path to folder
     - jwtR512.key.pub - is public key in PEM format
     - jwtRS512.key - copy of jwtRS512 with .key extenstion
     - jwtRS512.jwks - file with Public key removed start& end text and line chars 
-    - jwtRS512jwks.json - compiled jwks - if supplied
+    - jwtRS512jwks.json - compiled jwks - if supplied optional input val will be used as filename otherwise will use jwtRS512jwks as default 
