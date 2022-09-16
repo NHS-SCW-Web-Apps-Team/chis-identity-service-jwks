@@ -18,8 +18,8 @@ e.g.
 This will generate a set of file using the following file Structure : 
 
 Path to folder
-- <env> e.g. Sandbox
-  - <kid> e.g. Sandbox-1
+- \<env> folder e.g. Sandbox
+  - \<kid> folder e.g. Sandbox-1
     - jwtRS512 - private key in PEM format
     - jwtRS512.pub - public key in OpenSSH authorized_keys format - which is not used
     - jwtR512.key.pub - is public key in PEM format
