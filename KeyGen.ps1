@@ -22,11 +22,20 @@ if (Test-Path $keypath){
 }
 
 $privatekey = $keypath+"/jwtRS512"
-ssh-keygen -t rsa -b 4096 -m PEM -f $privatekey
+#ssh-keygen -t rsa -b 4096 -m PEM -f $privatekey
 
 $PublicKeyOpenSSH = $keypath+"/jwtRS512.pub"
 $publicKeyPEM =$keypath+"/jwtRS512.key.pub" 
-ssh-keygen -f $PublicKeyOpenSSH -e -m pem > $publicKeyPEM 
+
+if($IsWindows){
+    ssh-keygen -t rsa -b 4096 -m PEM -f $privatekey
+    ssh-keygen -f $PublicKeyOpenSSH -e -m pem > $publicKeyPEM 
+}else{
+    # added but untested ... "shouuld wour "
+    $UnixPrivateKeyPath = $privatekey+".key"
+    ssh-keygen -t rsa -b 4096 -m PEM -f $UnixPrivateKeyPath 
+    openssl rsa -in $UnixPrivateKeyPath -pubout -outform PEM -out $publicKeyPEM
+}
 
 Copy-Item -Path $privatekey -Destination $privatekey".key" 
 Copy-Item -Path $publicKeyPEM  -Destination $privatekey".jwks"
@@ -36,7 +45,7 @@ Copy-Item -Path $publicKeyPEM  -Destination $privatekey".jwks"
 $n = Get-Content -Path $privatekey".jwks"
 
 $jwksFileName = Read-Host "set filename for JWKS output" .\.env 
-
+$jwksFileName= $jwksFileName.trim()
 if($jwksFileName.Length -eq 0){
     $jwksPath=$privatekey+"jwks"
 }else{
