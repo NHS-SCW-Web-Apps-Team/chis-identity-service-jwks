@@ -5,6 +5,14 @@ SCW-Managed JWKS Keystore to store public keys of applications using client_cred
 
 The KeyGen script should make it easier to create Public/Private key pairs and also jwks files 
 
+You will need this to generate jwks
+
+https://www.npmjs.com/package/pem-jwk
+
+```
+$ npm install -g pem-jwk
+```
+
 Example for Windows
 
 To use you will need to provide 2 vars -env <environment>  -kid <keyname> 

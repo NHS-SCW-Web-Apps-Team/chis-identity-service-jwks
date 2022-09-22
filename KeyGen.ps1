@@ -31,18 +31,20 @@ if($IsWindows){
     ssh-keygen -t rsa -b 4096 -m PEM -f $privatekey
     ssh-keygen -f $PublicKeyOpenSSH -e -m pem > $publicKeyPEM 
 }else{
-    # added but untested ... "shouuld wour "
+    # added but untested ... "should work "
     $UnixPrivateKeyPath = $privatekey+".key"
     ssh-keygen -t rsa -b 4096 -m PEM -f $UnixPrivateKeyPath 
     openssl rsa -in $UnixPrivateKeyPath -pubout -outform PEM -out $publicKeyPEM
 }
 
 Copy-Item -Path $privatekey -Destination $privatekey".key" 
-Copy-Item -Path $publicKeyPEM  -Destination $privatekey".jwks"
+#Copy-Item -Path $publicKeyPEM  -Destination $privatekey".jwks"
 
-(Get-Content -Path $privatekey".jwks" -Raw ) -replace "-----BEGIN RSA PUBLIC KEY-----","" -replace "-----END RSA PUBLIC KEY-----","" -replace "`r`n" ,""  | Set-Content $privatekey".jwks"
+pem-jwk $publicKeyPEM > $privatekey"Public.jwks"
 
-$n = Get-Content -Path $privatekey".jwks"
+$jwks = Get-Content -Path $privatekey"Public.jwks" -Raw 
+
+$n = $jwks| ConvertFrom-Json 
 
 $jwksFileName = Read-Host "set filename for JWKS output" .\.env 
 $jwksFileName= $jwksFileName.trim()
@@ -52,4 +54,6 @@ if($jwksFileName.Length -eq 0){
     $jwksPath=$keypath+"/"+$jwksFileName
 }
 
-@{keys=@(@{kty="RSA"; e="AQAB";kid=$kid;use="sig";n=$n})} | ConvertTo-Json | Set-Content $jwksPath".json"
+# pem-jwk $publicKeyPEM > $jwksPath.jwks
+
+@{keys=@(@{kty="RSA"; e="AQAB";kid=$kid;use="sig";n=$n.n})} | ConvertTo-Json | Set-Content $jwksPath".json"
