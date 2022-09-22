@@ -32,5 +32,5 @@ Path to folder
     - jwtRS512.pub - public key in OpenSSH authorized_keys format - which is not used
     - jwtR512.key.pub - is public key in PEM format
     - jwtRS512.key - copy of jwtRS512 with .key extenstion
-    - jwtRS512.jwks - file with Public key removed start& end text and line chars 
+    - jwtRS512Public.jwks - file with Public key converted > JWKS format (uses pem-jwks)
     - jwtRS512jwks.json - compiled jwks - if supplied optional input val will be used as filename otherwise will use jwtRS512jwks as default 
