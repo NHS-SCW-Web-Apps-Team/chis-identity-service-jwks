@@ -13,6 +13,8 @@ https://www.npmjs.com/package/pem-jwk
 $ npm install -g pem-jwk
 ```
 
+or use something like https://github.com/russelldavies/jwk-creator 
+
 Example for Windows
 
 To use you will need to provide 2 vars -env <environment>  -kid <keyname> 
