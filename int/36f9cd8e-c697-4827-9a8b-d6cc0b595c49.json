@@ -1,9 +1,11 @@
 {
-  "keys": [{
-    "kty": "RSA",
-    "e": "AQAB",
-    "n": "MIICCgKCAgEA5AgYrIFSyHXICaesvcFYEXIIBDPvC7evRwXgSuw1p5moQE38Ogkk0mxqEXRcwdzSCZeEglvNb715HYkWalAgUljeYqTTjT7Eb40QhzJj9cGYk6x6fH93UTlfLNCjwNTTp6miVEQN4uIACxm/dw4l+BjQqOYBUBgS6n5RCJ0iVZPy5oPL9U2o/1nDEZUN++xA+/Ndvp3Ko1zsWfwqq8WDAe+55uxr/uS5tlPlW1awwet8F4MBrJVeRxY2diUpHZ/NhCpfmMZyu77/sP1UX0jI031kbQ2MyLlxn3L+0oZFPYkigtI3bkEeZnHTYTK9CrABJQJueHzsWLJ0QioIElf1VRV+O1bCEi2R3hSda2xvSsgbLAdqAQTLEl9XuxzRewijl1ot7qidIUcsnT1Olbuc7m08L/IW0Zitrjq5gNCccWaXAePMTfA0dwaWruE0RZTINp766uq3Dt4QbAUxzHMSM65hF8XfubiQ97mqdeN/Kd+sv/ZYHz7QZ7C+BYENhIlYXnImu79RMC3ANBfjBtc5wJ6MUmpDuJk9sN8n73Tq4mdxQhkdekmmYHtA+7TISaI7k0B31EdsMTmlZBcJQcWiO3rzl1+lmtFZVp1VcepjNEgXxjIyYbycG8cohCxx7WEbUZX7SaTAnS87tE0ENPY5V4n/rSWX1Rpps+C86aTRdWcCAwEAAQ==",
-    "kid": "integration-1",
-    "use": "sig"
-  }]
+  "keys": [
+    {
+      "use": "sig",
+      "e": "AQAB",
+      "kty": "RSA",
+      "n": "6CXdLBO3LYt53UbIxxiSU0-oohj39s7iILc4tE83zy60unEpYvamJPy_qRv2Q8sJ1oBavqNEsVf9T7Vw0X9Od0LNbmG9MLMFRDqV-7fqOLUlCBqwqPC1nepAGEVOO_iXGYDKTutHNWANz2pS5nMYqgkJYmQujhck_Pc_HYgzeBcU4ilDu6k2PRqwAAa8l1gc1y8QmISWD0Qd3BIdc4i4rkYPRlbLQwRgW4biywamnD3sg4H67BeT3MxxKA2I1vWWhjzraNehzpjyiBMy6TO84KJI32uyLhQmE3y8pBgtCT2e9DWoVJOB0qcPYYLbMo1mT8gcOzCP4fDidLkTKSxqwUzhHHl7JVqJLDzZh5vog2KfvQSeVmYEKrxfArBic_UaGrZviKa4fx0x0VxHyhaxlwdn0_-GrQbDW59FBdEUvmAMlJDe-vSOq2A0hq79J6FKObnorxQ072Sg0gmnr5cjPiuBmsMMDHitR75dS_-5ZhNLmOx7bCAl1OA7MJBiihtSYicshOZzGdY2Jww6i-pClRyiSz5iHLPSF8XHKn4bu43V8CARSkcs3IpNHNmIvvDy4upcZVn91hBYO4buhfK0HIIEXyD2_uHWrY40QABWv-GqIjCcwJukBfsJ0JI57pnNliT6TWRR48DpyQ5hH4HkBEQqkEnQFDzQAhJsizF3VhE",
+      "kid": "integration-2"
+    }
+  ]
 }
