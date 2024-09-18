@@ -1,0 +1,11 @@
+{
+  "keys": [
+    {
+      "use": "sig",
+      "kty": "RSA",
+      "n": "nWxEgFRJQCVVMgCI_LSi0XFdXdXxADfPDgNH0YBMoqc-oDVhHjIUXGOW8fNF14yNaFvBdu6mOdOrA60KpwDpiOxWNx2nOFm2gXELaPdOaKW8TU_R5T8Uoj0advEaEAVjJeuCTirHL4akS6R9GP_TZDS24k_YGopkJtcPesQD9iFZSWQ6tm5b87h3-LFwd684cDzThjI14Gb_EDiutYDxJtbdtjpe7TAS6Cr3y54c4y1CHnYue3tL_ah8WE7kJOTS_e3MPouYBC3Zlheuu0mM_cPzo_bSsNze5xvFEbW8KsvfOPD9H5rBp0Gf-xzBAP-ZBLFNjFqUAb_tX_ATEdbsJF0ejMTpAxsnh3BhSBIAVH6E3iYEtvtlIDU-qOah_cvloJNBmKazCTo2xju2tjEBEoTcCpbvqH9TZzi6w7gx_6clrSW51XgYKVMubnTJUvPwe9njy_LyLH-lqkz5VTV5lQWzXnlSin5mJyOK5i3V4dmvHjTDnj6-hbLNCNOTh1_bSwq6GEa2-ql5UIWTf2NYIwn0uMH5YgzjoJwstFteKNilMA2S2Hjb-uriEYuPjSEmt4lcD17otGBQu2EOTUGl9TLOH2bdFTt9qb5kEqoRRbSGtKC-k14L0BEP2-TvpZynBIB2GxGG00YHowQj8QKMAq-naFSIGdECXHE5uWgKLJE",
+      "e": "AQAB",
+      "kid": "IntTest-1"
+    }
+  ]
+}
